@@ -8,7 +8,9 @@
 #' twos <- c(2, 4, 8, 16)
 #' geomean(twos)
 
+#' @export
 
 geomean = function(x, na.rm=TRUE){
   exp(sum(log(x[x > 0]), na.rm=na.rm) / length(x))
 }
+
