@@ -16,6 +16,7 @@ The geometric mean of x.
 }
 \description{
 Calculate the geometric mean of a vector of numbers.
+This uses the log-antilog method; it takes the natural logarithm of each number, averages them together, and then takes the antilog (i.e., exponent) of the result.
 }
 \examples{
 twos <- c(2, 4, 8, 16)
