@@ -13,7 +13,5 @@
 
 geomean = function(x, na.rm=TRUE){
   exp(sum(log(x[x > 0]), na.rm=na.rm) / length(x))
-
-  cli::cli_alert_success("You have calculated the geometric mean of your numbers")
 }
 
